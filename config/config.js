@@ -5,6 +5,9 @@ var Config = exports;
 // application root
 Config.APP_ROOT = path.normalize( path.dirname( __filename, '.js' ) + '/../' );
 
+// public directory
+Config.PUBLIC = Config.APP_ROOT + '/public';
+
 // CSS file combine and compress config
 Config.CSS = {
     ROOT: 'public/css',

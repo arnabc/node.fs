@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    background: #f2f2f2;
+}
+
+#item {
+    width: 400px;
+    height: 300px;
+    /* this image is bigger than 32KB and should not be base64 encoded */
+    background: url(../images/bg.png) no-repeat;
+    border: 5px solid #808080;
+}
+
+#aol {
+    width: 100px;
+    height: 80px;
+    background: url(../images/logo/aol.gif) no-repeat;    
+    border: 5px solid #808080;
+    float: left;
+}
+
+#gmail {
+    width: 100px;
+    height: 80px;
+    background: url(../images/logo/gmail.gif) no-repeat;
+    border: 5px solid #808080;
+    float: left;
+}
+
+#node {
+    width: 664px;
+    height: 180px;
+    background: #000 url(../images/node.png) no-repeat;
+    border: 5px solid #808080;
+}

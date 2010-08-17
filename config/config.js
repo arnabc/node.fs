@@ -2,26 +2,21 @@ var path = require('path');
 
 var Config = exports;
 
-// application root
-Config.APP_ROOT = path.normalize( path.dirname( __filename, '.js' ) + '/../' );
-
-// public directory
-Config.PUBLIC = Config.APP_ROOT + '/public';
-
 // CSS file combine and compress config
 Config.CSS = {
-    ROOT: 'public/css',
+    ROOT: '/css',
     
     COMBINE: true,
     COMPRESS: false,
     PATTERN: '*.css', // in future release @import will be supported
+    FILE: 'style.min.css',
 
     // enable base64 encoding of images in CSS files
     BASE64: true,
     // MHTML configuration for IE, to make it work the 'BASE64' has
     // to be set as 'true'. To prevent MHTML option for IE set it as null/false
     MHTML: {
-        FILE: '/mhtml-ie.css' 
+        FILE: '/mhtml-ie.xcss' 
     }
 };
 
